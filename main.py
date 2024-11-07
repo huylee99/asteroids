@@ -42,10 +42,8 @@ def main():
 
       for bullet in shots:
         if asteroid.is_collide(bullet):
-          asteroid.kill()
+          asteroid.split()
           bullet.kill()
-
-
 
     pygame.Surface.fill(screen, "black")
 
